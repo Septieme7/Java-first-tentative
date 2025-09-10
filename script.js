@@ -2,8 +2,6 @@
 let x = 6;
 let y = 6;
 let z = 7;
-
-// ben et yb sont des chaînes de caractères
 let ben = "Dieu";
 let yb = " ou son frère";
 
@@ -20,30 +18,38 @@ function clearResults() {
 
 // Fonctions pour afficher les résultats
 function showH() {
-    document.getElementById("results").innerHTML += `<p>La valeur de h (x + y) est : ${h}</p>`;
+    document.getElementById("results").innerHTML = `<p>La valeur de h (x + y) est : ${h}</p>`;
 }
 
 function showW() {
-    document.getElementById("results").innerHTML += `<p>La valeur de w (x - y) est : ${w}</p>`;
+    document.getElementById("results").innerHTML = `<p>La valeur de w (x - y) est : ${w}</p>`;
 }
 
 function showV() {
-    document.getElementById("results").innerHTML += `<p>La valeur de v (x / y) est : ${v}</p>`;
+    document.getElementById("results").innerHTML = `<p>La valeur de v (x / y) est : ${v}</p>`;
 }
 
 function showU() {
-    document.getElementById("results").innerHTML += `<p>La valeur de u (x + y + h) est : ${u}</p>`;
+    document.getElementById("results").innerHTML = `<p>La valeur de u (x + y + h) est : ${u}</p>`;
 }
 
-function showBen() {
-    document.getElementById("results").innerHTML += `<p>La valeur de ben est donc ${ben + yb}</p>`;
+// Fonction pour afficher "La valeur de ben peut être : Dieu ou son frère"
+function showBenPossible() {
+    document.getElementById("results").innerHTML = `<p>La valeur de ben peut être : ${ben + yb}</p>`;
+}
+
+// Fonction pour afficher "La valeur ben est donc Dieu et py C tout..."
+function showBenFinal() {
+    document.getElementById("results").innerHTML = `<p>La valeur ben est donc ${ben} et py C tout...</p>`;
 }
 
 function showAll() {
-    clearResults(); // Efface les résultats précédents
-    showH();
-    showW();
-    showV();
-    showU();
-    showBen();
+    document.getElementById("results").innerHTML = `
+        <p>La valeur de h (x + y) est : ${h}</p>
+        <p>La valeur de w (x - y) est : ${w}</p>
+        <p>La valeur de v (x / y) est : ${v}</p>
+        <p>La valeur de u (x + y + h) est : ${u}</p>
+        <p>La valeur de ben peut être : ${ben + yb}</p>
+        <p>La valeur ben est donc ${ben} et py C tout...</p>
+    `;
 }

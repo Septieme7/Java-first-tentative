@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculs</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calculs Brophezionnel et Dyzaillening Css</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+
 </head>
 <body>
     <div class="container">
-        <h1>Calculs Ben7 en JAVA incorporé au fichier HTML et CSS</h1>
+        <h1>Calculs de Ben7</h1>
 
         <!-- Tableau des variables -->
         <div class="variables-table">
@@ -52,17 +54,25 @@
             </table>
         </div>
 
-        <div class="buttons">
-            <button onclick="showH()">Afficher h (x + y)</button>
-            <button onclick="showW()">Afficher w (x - y)</button>
-            <button onclick="showV()">Afficher v (x / y)</button>
-            <button onclick="showU()">Afficher u (x + y + h)</button>
-            <button onclick="showBen()">Afficher ben</button>
-            <div class="special-buttons">
-                <button class="show-all" onclick="showAll()">Afficher tous les résultats</button>
-                <button class="clear-all" onclick="clearResults()">Effacer les résultats</button>
+        <!-- Boutons -->
+        <div class="buttons-wrapper">
+            <div class="buttons-container">
+                <button class="button button-diagonal" onclick="showH()">Afficher h (x + y)</button>
+                <button class="button button-diagonal" onclick="showW()">Afficher w (x - y)</button>
+                <button class="button button-diagonal" onclick="showV()">Afficher v (x / y)</button>
+                <button class="button button-diagonal" onclick="showU()">Afficher u (x + y + h)</button>
+                <button class="button button-diagonal" onclick="showBenPossible()">Afficher ben possible</button>
+                <button class="button button-diagonal" onclick="showBenFinal()">Afficher ben final</button>
             </div>
         </div>
+
+        <!-- Boutons spéciaux -->
+        <div class="special-buttons-container">
+            <button class="button show-all" onclick="showAll()">Full résultats</button>
+            <button class="button clear-all" onclick="clearResults()">Full Delete</button>
+        </div>
+
+        <!-- Résultats -->
         <div id="results"></div>
     </div>
     <script src="script.js"></script>
