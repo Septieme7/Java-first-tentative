@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a1a;
+    color: #0ff0fc;
+    margin: 0;
+    padding: 20px;
+    background-image: radial-gradient(circle at 10% 20%, rgba(15, 255, 245, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%,rgba(255, 15, 195, 0.1) 0%, transparent 30%);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(10, 10, 30, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(15, 255, 245, 0.3);
+    box-shadow: 0 0 20px rgba(15, 255, 245, 0.3);
+}
+
+h1 {
+    color: #ff00aa;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 0, 170, 0.7);
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px;
+    background-color: rgba(15, 255, 245, 0.2);
+    color: #0ff0fc;
+    border: 1px solid rgba(15, 255, 245, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(15, 255, 245, 0.5);
+    box-shadow: 0 0 10px rgba(15, 255, 245, 0.3);
+}
+
+button:hover {
+    background-color: rgba(15, 255, 245, 0.4);
+    box-shadow: 0 0 15px rgba(15, 255, 245, 0.6);
+}
+
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(10, 10, 30, 0.6);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 0, 170, 0.3);
+    box-shadow: inset 0 0 10px rgba(255, 0, 170, 0.2);
+}
+
+#results p {
+    margin: 8px 0;
+    color: #0ff0fc;
+    text-shadow: 0 0 5px rgba(15, 255, 245, 0.7);
+}
+
+#results p:nth-child(odd) {
+    color: #ff00aa;
+    text-shadow: 0 0 5px rgba(255, 0, 170, 0.7);
+}
+/* Style pour le tableau des variables */
+.variables-table {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(10, 10, 30, 0.6);
+    border-radius: 8px;
+    border: 1px solid rgba(15, 255, 245, 0.3);
+    box-shadow: 0 0 10px rgba(15, 255, 245, 0.2);
+}
+
+.variables-table h2 {
+    color: #ff00aa;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(255, 0, 170, 0.5);
+    font-size: 18px;
+}
+
+.variables-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.variables-table th, .variables-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(15, 255, 245, 0.2);
+}
+
+.variables-table th {
+    color: #0ff0fc;
+    font-weight: bold;
+}
+
+.variables-table td {
+    color: #e0e0e0;
+}
+/* Style pour les boutons spéciaux */
+.special-buttons {
+    display: flex;
+    gap: 10px;
+    grid-column: span 2; /* Prend toute la largeur */
+    justify-content: center; /* Centre les boutons horizontalement */
+}
+
+/* Bouton "Afficher tous les résultats" */
+.show-all {
+    background-color: rgba(0, 255, 100, 0.3) !important;
+    border: 1px solid rgba(0, 255, 100, 0.4) !important; /* Bordure plus fine */
+    color: rgba(0, 255, 100, 0.9) !important;
+    box-shadow: 0 0 5px rgba(0, 255, 100, 0.3) !important; /* Ombre plus légère */
+    width: 20%; /* Largeur légèrement réduite */
+    padding: 8px; /* Padding légèrement réduit */
+}
+
+/* Effet de survol pour "Afficher tous les résultats" */
+.show-all:hover {
+    background-color: rgba(0, 255, 100, 0.4) !important;
+    box-shadow: 0 0 8px rgba(0, 255, 100, 0.5) !important;
+}
+
+/* Bouton "Effacer les résultats" */
+.clear-all {
+    background-color: rgba(255, 50, 50, 0.3) !important;
+    border: 1px solid rgba(255, 50, 50, 0.4) !important; /* Bordure plus fine */
+    color: rgba(255, 50, 50, 0.9) !important;
+    box-shadow: 0 0 5px rgba(255, 50, 50, 0.3) !important; /* Ombre plus légère */
+    width: 20%; /* Largeur légèrement réduite */
+    padding: 8px; /* Padding légèrement réduit */
+}
+
+/* Effet de survol pour "Effacer les résultats" */
+.clear-all:hover {
+    background-color: rgba(255, 50, 50, 0.4) !important;
+    box-shadow: 0 0 8px rgba(255, 50, 50, 0.5) !important;
+}
+
+

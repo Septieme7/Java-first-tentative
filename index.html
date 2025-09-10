@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculs Ben7 en JAVA incorporé au fichier HTML et CSS</h1>
+
+        <!-- Tableau des variables -->
+        <div class="variables-table">
+            <h2>Déclaration et initialisation des variables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Type</th>
+                        <th>Valeur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>x</td>
+                        <td>int</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>y</td>
+                        <td>int</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>z</td>
+                        <td>int</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>ben</td>
+                        <td>String</td>
+                        <td>"Dieu"</td>
+                    </tr>
+                    <tr>
+                        <td>yb</td>
+                        <td>String</td>
+                        <td>" ou son frère"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <button onclick="showH()">Afficher h (x + y)</button>
+            <button onclick="showW()">Afficher w (x - y)</button>
+            <button onclick="showV()">Afficher v (x / y)</button>
+            <button onclick="showU()">Afficher u (x + y + h)</button>
+            <button onclick="showBen()">Afficher ben</button>
+            <div class="special-buttons">
+                <button class="show-all" onclick="showAll()">Afficher tous les résultats</button>
+                <button class="clear-all" onclick="clearResults()">Effacer les résultats</button>
+            </div>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
