@@ -5,76 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculs Brophezionnel et Dyzaillening Css</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
-
 </head>
+
 <body>
     <div class="container">
-        <h1>Calculs de Ben7</h1>
+        <h1>Calculs Brophezionnel et Dyzaillening Css By Ben7</h1>
+        
+        <div class="buttons-wrapper">
+            <div class="buttons-container">
+                <button class="button button-diagonal">Afficher h</button>
+                <button class="button button-diagonal">Afficher w</button>
+                <button class="button button-diagonal">Afficher v</button>
+                <button class="button button-diagonal">Afficher u</button>
+                <button class="button button-diagonal">Ben possible</button>
+                <button class="button button-diagonal">Ben final</button>
+            </div>
+        </div>
 
-        <!-- Tableau des variables -->
+        <div class="special-buttons-container">
+            <button class="show-all">Show All</button>
+            <button class="clear-all">Clear All</button>
+        </div>
+
+        <div id="results">
+            <p>Cliquez sur un bouton pour afficher les résultats...</p>
+        </div>
+
         <div class="variables-table">
-            <h2>Déclaration et initialisation des variables</h2>
+            <h2>Variables</h2>
             <table>
                 <thead>
                     <tr>
                         <th>Variable</th>
-                        <th>Type</th>
                         <th>Valeur</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>x</td>
-                        <td>int</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>y</td>
-                        <td>int</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>z</td>
-                        <td>int</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>ben</td>
-                        <td>String</td>
-                        <td>"Dieu"</td>
-                    </tr>
-                    <tr>
-                        <td>yb</td>
-                        <td>String</td>
-                        <td>" ou son frère"</td>
-                    </tr>
+                    <!-- Rempli dynamiquement par JavaScript -->
                 </tbody>
             </table>
         </div>
-
-        <!-- Boutons -->
-        <div class="buttons-wrapper">
-            <div class="buttons-container">
-                <button class="button button-diagonal" onclick="showH()">Afficher h (x + y)</button>
-                <button class="button button-diagonal" onclick="showW()">Afficher w (x - y)</button>
-                <button class="button button-diagonal" onclick="showV()">Afficher v (x / y)</button>
-                <button class="button button-diagonal" onclick="showU()">Afficher u (x + y + h)</button>
-                <button class="button button-diagonal" onclick="showBenPossible()">Afficher ben possible</button>
-                <button class="button button-diagonal" onclick="showBenFinal()">Afficher ben final</button>
-            </div>
-        </div>
-
-        <!-- Boutons spéciaux -->
-        <div class="special-buttons-container">
-            <button class="button show-all" onclick="showAll()">Full résultats</button>
-            <button class="button clear-all" onclick="clearResults()">Full Delete</button>
-        </div>
-
-        <!-- Résultats -->
-        <div id="results"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
